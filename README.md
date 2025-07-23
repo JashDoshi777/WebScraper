@@ -1,5 +1,3 @@
-#Web Scraper#
-
 This project is a Python-based laptop specification scraper built using Selenium and Chrome WebDriver. It is designed to automate the process of collecting detailed specifications for laptops listed on Amazon based on a given list of model names. The tool reads model names from a CSV file, performs an automated search for each on Amazon, and extracts key technical details from the most relevant product listing.
 
 The extracted information includes attributes such as brand, processor, RAM size, graphics card, operating system, screen size, rating, and price. These details are parsed and stored in a structured format and written to a CSV output file for easy access and further analysis.
