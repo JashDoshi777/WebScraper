@@ -1,2 +1,11 @@
-This project is a powerful web scraping tool built using Python, Selenium, and ChromeDriver to automate the extraction of laptop specifications from Amazon. It reads a list of laptop model names from a CSV file, intelligently searches for each one on Amazon, and applies a custom relevance scoring algorithm to identify the most accurate product match. The scraper then extracts essential specifications including brand, price, rating, processor, RAM, graphics card, and more. Advanced filtering ensures that sponsored, refurbished, or mismatched listings are skipped. The collected data is structured and saved into a clean CSV format using pandas for further analysis. This scraper simulates an API-like behavior with custom logic for keyword parsing, model matching, and fallback handling, making it a robust solution for large-scale product data collection tasks.
+#Web Scraper
 
+This project is a Python-based laptop specification scraper built using Selenium and Chrome WebDriver. It is designed to automate the process of collecting detailed specifications for laptops listed on Amazon based on a given list of model names. The tool reads model names from a CSV file, performs an automated search for each on Amazon, and extracts key technical details from the most relevant product listing.
+
+The extracted information includes attributes such as brand, processor, RAM size, graphics card, operating system, screen size, rating, and price. These details are parsed and stored in a structured format and written to a CSV output file for easy access and further analysis.
+
+The scraper simulates user behavior by launching a headless Chrome browser session using ChromeDriver, navigating Amazon’s interface, clicking on relevant links, and scraping data directly from the product detail pages. The script also includes logic to match product titles with the original model names to ensure accuracy and avoid mismatches.
+
+This tool is especially useful for aggregating market data, performing product comparisons, building recommendation systems, or maintaining a product database. The scraper can be extended to include additional e-commerce platforms, implement fuzzy matching for better model alignment, or integrate with cloud storage for live data ingestion.
+
+Proper handling of browser automation, wait times, and dynamic page elements has been considered to ensure robustness. The project demonstrates practical web scraping, data cleaning, and automation techniques suitable for real-world applications involving product intelligence.
